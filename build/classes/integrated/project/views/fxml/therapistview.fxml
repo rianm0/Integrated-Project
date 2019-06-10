@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="app" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="integrated.project.controllers.TherapistViewController">
+   <children>
+      <Button fx:id="logoutBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutBtnHandle" text="Logout" />
+      <DatePicker fx:id="dateTime" layoutX="93.0" layoutY="14.0" onAction="#updateAppointments" />
+      <ComboBox fx:id="setStatusBox" layoutX="300.0" layoutY="14.0" prefHeight="27.0" prefWidth="175.0" />
+      <Button fx:id="setStatusBtn" layoutX="491.0" layoutY="14.0" mnemonicParsing="false" onAction="#setStatus" prefHeight="27.0" prefWidth="95.0" text="Set Status" />
+      <TableView fx:id="aptTable" layoutY="44.0" onMouseClicked="#selectAppointment" prefHeight="356.0" prefWidth="337.0">
+        <columns>
+          <TableColumn fx:id="aptIDField" prefWidth="37.0" text="ID" />
+          <TableColumn fx:id="aptPatientField" prefWidth="112.0" text="Patient" />
+            <TableColumn fx:id="aptStatusField" prefWidth="118.0" text="Treatment Status" />
+            <TableColumn fx:id="aptCompleteField" prefWidth="77.0" text="Complete" />
+        </columns>
+      </TableView>
+      <Label layoutX="432.0" layoutY="44.0" text="Details" underline="true" />
+      <Label layoutX="346.0" layoutY="66.0" text="Patient Name" />
+      <Label layoutX="345.0" layoutY="95.0" text="Email" />
+      <Label layoutX="346.0" layoutY="124.0" text="Type" />
+      <Label layoutX="345.0" layoutY="156.0" text="Previous Appointments" />
+      <TextField fx:id="patientNameField" editable="false" layoutX="432.0" layoutY="61.0" />
+      <TextField fx:id="emailField" editable="false" layoutX="432.0" layoutY="90.0" />
+      <TextField fx:id="typeField" editable="false" layoutX="432.0" layoutY="119.0" />
+      <TextField fx:id="previousAptField" editable="false" layoutX="491.0" layoutY="151.0" prefHeight="27.0" prefWidth="107.0" />
+   </children>
+</AnchorPane>

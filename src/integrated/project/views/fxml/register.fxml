@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="app" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="integrated.project.controllers.RegisterController">
+   <children>
+      <ComboBox fx:id="usertype" layoutX="50.0" layoutY="80.0" onAction="#checkUserType" prefWidth="150.0" promptText="User Type" />
+      <TextField fx:id="firstNameField" layoutX="50.0" layoutY="123.0" promptText="First Name" />
+      <TextField fx:id="secondNameField" layoutX="50.0" layoutY="161.0" promptText="Second Name" />
+      <TextField fx:id="emailAddressField" layoutX="50.0" layoutY="199.0" promptText="Email Address" />
+      <TextField fx:id="phoneNumberField" layoutX="50.0" layoutY="246.0" promptText="Phone Number" />
+      <DatePicker fx:id="dobField" layoutX="372.0" layoutY="80.0" promptText="Date of Birth" />
+      <TextField fx:id="addressLine1Field" layoutX="372.0" layoutY="123.0" promptText="Address Line 1" />
+      <TextField fx:id="addressLine2Field" layoutX="372.0" layoutY="161.0" promptText="Address Line 2" />
+      <TextField fx:id="postcodeField" layoutX="372.0" layoutY="199.0" promptText="Postcode" />
+      <Button fx:id="register" layoutX="249.0" layoutY="293.0" mnemonicParsing="false" onAction="#registerBtnHandle" prefHeight="27.0" prefWidth="105.0" text="Register" />
+      <PasswordField fx:id="passwordField" layoutX="372.0" layoutY="246.0" promptText="Password" />
+      <ComboBox fx:id="therapisttype" layoutX="200.0" layoutY="80.0" opacity="0.0" prefHeight="27.0" prefWidth="143.0" promptText="Therapist" />
+      <Button fx:id="backBtn" layoutX="50.0" layoutY="14.0" mnemonicParsing="false" onAction="#backBtnHandle" text="Back" />
+      <Label fx:id="emailErrorLbl" layoutX="50.0" layoutY="226.0" textFill="RED" />
+      <Label fx:id="passwordErrorLbl" layoutX="372.0" layoutY="273.0" textFill="RED" />
+   </children>
+</AnchorPane>

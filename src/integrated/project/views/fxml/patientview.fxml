@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="app" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="integrated.project.controllers.PatientController">
+   <children>
+      <TableView fx:id="treatmentTable" editable="true" layoutY="46.0" prefHeight="358.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="refcolumn" prefWidth="115.0" text="Treatment Ref" />
+          <TableColumn fx:id="typecolumn" minWidth="4.0" prefWidth="132.0" text="Type" />
+            <TableColumn fx:id="therapistcolumn" prefWidth="138.0" text="Therapist" />
+            <TableColumn id="nextApt" fx:id="datecolumn" prefWidth="123.0" text="Next Appointment" />
+            <TableColumn id="treatmentStatus" fx:id="statusColumn" prefWidth="91.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="logoutBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutBtnHandle" prefHeight="27.0" prefWidth="66.0" text="Logout" />
+      <Button fx:id="bookAptBtn" layoutX="347.0" layoutY="15.0" mnemonicParsing="false" onAction="#newTrtHandle" prefHeight="27.0" prefWidth="117.0" text="Start Treatment" />
+      <Button fx:id="cancelAptBtn" layoutX="468.0" layoutY="15.0" mnemonicParsing="false" onAction="#cancelAptHandle" prefHeight="27.0" prefWidth="128.0" text="Cancel Treatment" />
+      <Button fx:id="viewAptBtn" layoutX="86.0" layoutY="15.0" mnemonicParsing="false" onAction="#viewAptHandle" prefHeight="27.0" prefWidth="147.0" text="View Appointments" />
+      <Button fx:id="newAptBtn" layoutX="238.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleNewApt" prefHeight="27.0" prefWidth="104.0" text="New Apt" />
+      <TableView fx:id="appTable" layoutY="46.0" prefHeight="357.0" prefWidth="603.0">
+         <columns>
+            <TableColumn fx:id="aptRefField" prefWidth="111.41084432601929" text="Appointment No" />
+            <TableColumn fx:id="aptDateField" prefWidth="152.61260223388672" text="Date" />
+            <TableColumn fx:id="aptCompleteField" prefWidth="110.45266723632812" text="Complete" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

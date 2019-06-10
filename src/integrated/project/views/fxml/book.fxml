@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="app" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="integrated.project.controllers.BookAppointmentController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backBtnHandle" text="Back" />
+      <DatePicker fx:id="date" layoutX="39.0" layoutY="120.0" promptText="Date" />
+      <ComboBox fx:id="paymenttype" layoutX="39.0" layoutY="174.0" onAction="#updatePaymentType" prefHeight="27.0" prefWidth="194.0" promptText="Payment Method" />
+      <TextField fx:id="cardname" layoutX="345.0" layoutY="71.0" promptText="Cardholder Name" />
+      <TextField fx:id="cardnum" layoutX="345.0" layoutY="107.0" promptText="Card Number" />
+      <TextField fx:id="expiry" layoutX="345.0" layoutY="147.0" promptText="Expiry Date" />
+      <TextField fx:id="cvc" layoutX="345.0" layoutY="187.0" promptText="CVC" />
+      <Button fx:id="submitBtn" layoutX="345.0" layoutY="223.0" mnemonicParsing="false" onAction="#submitBtnHandle" prefHeight="27.0" prefWidth="167.0" text="Book" />
+      <Label layoutX="243.0" layoutY="33.0" text="Book Appointment" />
+      <Label layoutX="300.0" layoutY="228.0" text="£20" />
+   </children>
+</AnchorPane>

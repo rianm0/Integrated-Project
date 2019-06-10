@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="app" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="integrated.project.controllers.AdminViewController">
+   <children>
+      <Button fx:id="logoutBtn" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#logoutBtnHandle" text="Logout" />
+      <TableView fx:id="usertable" editable="true" layoutX="1.0" layoutY="39.0" prefHeight="561.0" prefWidth="799.0">
+        <columns>
+          <TableColumn fx:id="useridcol" prefWidth="31.689584851264954" text="id" />
+          <TableColumn fx:id="emailcol" prefWidth="98.14685440063477" text="email" />
+            <TableColumn fx:id="firstnamecol" prefWidth="89.58367919921875" text="firstname" />
+            <TableColumn fx:id="lastnamecol" prefWidth="81.41635131835938" text="lastname" />
+            <TableColumn fx:id="passwordcol" prefWidth="75.0" text="password" />
+            <TableColumn fx:id="usertypecol" prefWidth="75.0" text="type" />
+            <TableColumn fx:id="postcodecol" prefWidth="75.0" text="postcode" />
+            <TableColumn fx:id="line1addcol" prefWidth="111.89410400390625" text="Line1Address" />
+            <TableColumn fx:id="line2addcol" prefWidth="68.6895751953125" text="Line2" />
+            <TableColumn fx:id="phonecol" prefWidth="111.89410400390625" text="PhoneNo" />
+        </columns>
+      </TableView>
+      <TableView fx:id="apttable" layoutY="39.0" prefHeight="561.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+         <columns>
+            <TableColumn fx:id="aptidcol" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="patientcol" prefWidth="137.0" text="patient" />
+            <TableColumn fx:id="therapistcol" prefWidth="143.0" text="therapist" />
+            <TableColumn fx:id="apttypecol" prefWidth="118.0" text="type" />
+            <TableColumn fx:id="datecol" prefWidth="125.0" text="date" />
+         </columns>
+      </TableView>
+      <Button layoutX="76.0" layoutY="10.0" mnemonicParsing="false" onAction="#deleteBtnHandle" text="Delete" />
+      <Label layoutX="335.0" layoutY="10.0" text="Administrator View" textAlignment="CENTER">
+         <font>
+            <Font name="System Font" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="chooseView" layoutX="204.0" layoutY="10.0" onAction="#updateView" prefHeight="27.0" prefWidth="113.0" promptText="View" />
+      <Label fx:id="currentTableLbl" layoutX="669.0" layoutY="16.0" textAlignment="JUSTIFY" />
+   </children>
+</AnchorPane>
